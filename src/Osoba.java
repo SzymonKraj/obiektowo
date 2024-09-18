@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Osoba {
+public abstract class Osoba {
     String imie;
     String nazwisko;
     int wiek;

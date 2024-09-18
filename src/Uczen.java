@@ -1,4 +1,4 @@
-public class Uczen extends Osoba{
+public class Uczen extends Osoba implements Dyzurny{
 
     private int nrEwidencyjny;
     static int liczbaObiektow;
@@ -21,5 +21,10 @@ public class Uczen extends Osoba{
                 ", imie='" + getImie() +
                 ", nazwisko='" + getNazwisko() +
                 '}';
+    }
+
+    @Override
+    public void wykonajDyzur() {
+        System.out.println("uczen zmazuje tablice");
     }
 }
