@@ -47,4 +47,13 @@ public class Osoba {
             System.out.println("nie mozesz wejsc");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Osoba{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", wiek=" + wiek +
+                '}';
+    }
 }
