@@ -10,4 +10,16 @@ public class Osoba {
         this.nazwisko = nazwisko;
         this.wiek = wiek;
     }
+
+    public String getImie() {
+        return imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public int getWiek() {
+        return wiek;
+    }
 }
