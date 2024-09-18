@@ -7,10 +7,22 @@ public class Osoba {
 
     //konstruktor to metoda wyowływana w momencie tworzenia obiektu
 
+    public Osoba(String imie, String nazwisko) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        wiek =7;
+    }
+
     public Osoba(String imie, String nazwisko, int wiek) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.wiek = wiek;
+    }
+
+    public Osoba() {
+        imie = "";
+        nazwisko = "";
+        wiek = 0;
     }
 
     public String getImie() {
