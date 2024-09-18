@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Osoba {
     String imie;
     String nazwisko;
@@ -21,5 +23,16 @@ public class Osoba {
 
     public int getWiek() {
         return wiek;
+    }
+
+    public void setImie(String imie) {
+
+        Scanner scanner = new Scanner(System.in);
+        String haslo = scanner.next();
+        if (haslo.equals("qwe123")) {
+            this.imie = imie;
+        } else {
+            System.out.println("nie mozesz wejsc");
+        }
     }
 }
