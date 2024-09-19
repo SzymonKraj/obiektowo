@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+
+
+
+
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        Uczen uczen = new Uczen("Daniel","Ustianowski");
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        Uczen uczen2 = new Uczen("Daniell","Ustianowski");
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+        Uczen uczen3 = new Uczen("Danielll","Ustianowskiii");
+        System.out.println("Liczba uczniow"+Uczen.liczbaObiektow);
+
+        Nauczyciel nauczycielSlowik = new Nauczyciel("Marlena","Slowik",25,"matematyka");
+        System.out.println(nauczycielSlowik);
+
+        Klasa klasa3A = new Klasa("Programisci",nauczycielSlowik);
+        klasa3A.dodajUczniaDoKlasy(uczen);
+        klasa3A.dodajUczniaDoKlasy(uczen2);
+        klasa3A.dodajUczniaDoKlasy(uczen3);
+        System.out.println(klasa3A);
+    }
+}
